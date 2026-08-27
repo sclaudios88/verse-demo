@@ -1,5 +1,5 @@
-const CACHE_NAME = "verse-shell-1kfy7hp";
-const APP_SHELL = ["/verse-demo/","/verse-demo/manifest.webmanifest","/verse-demo/icons/verse-mark.svg","/verse-demo/assets/index-KWSaB6z-.js","/verse-demo/assets/index-XcFbFkMC.css"];
+const CACHE_NAME = "verse-shell-5ed805";
+const APP_SHELL = ["/verse-demo/","/verse-demo/manifest.webmanifest","/verse-demo/icons/verse-mark.svg","/verse-demo/assets/index-DLtLy16A.js","/verse-demo/assets/index-XcFbFkMC.css"];
 const SHELL_ROOT = "/verse-demo/";
 
 self.addEventListener("install", (event) => {
