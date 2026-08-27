@@ -1,0 +1,6 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 128 128" role="img" aria-labelledby="title">
+  <title id="title">Verse</title>
+  <rect width="128" height="128" rx="30" fill="#171717"/>
+  <path d="M25 31h22l18 45 17-45h22L75 99H55L25 31Z" fill="#ff6b00"/>
+  <path d="M76 26c13 2 23 9 29 20" fill="none" stroke="#fffaf5" stroke-width="8" stroke-linecap="round"/>
+</svg>
