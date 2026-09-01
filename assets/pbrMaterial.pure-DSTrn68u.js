@@ -1,0 +1,1 @@
+import{c as e,o as t,s as n}from"./createVerseProductionRuntime-CoKEK8m-.js";export{t as PBRMaterial,n as RegisterPBRMaterial,e as RegisterPbrMaterial};
