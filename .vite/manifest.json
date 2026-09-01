@@ -11,6 +11,17 @@
       "_internalTexture-Dbf8pg9P.js"
     ]
   },
+  "_animatable.pure-D3Pzdk9N.js": {
+    "file": "assets/animatable.pure-D3Pzdk9N.js",
+    "name": "animatable.pure",
+    "imports": [
+      "_engineStore-BCGLUAAJ.js",
+      "_math.color.pure-Bz4eYejG.js",
+      "_animation.pure-CrKBcOb6.js",
+      "_timingTools-BfV6cIZn.js",
+      "_scene.pure-NS2DTvyA.js"
+    ]
+  },
   "_animation.pure-CrKBcOb6.js": {
     "file": "assets/animation.pure-CrKBcOb6.js",
     "name": "animation.pure",
@@ -116,23 +127,27 @@
       "_shaderStore-D-XQlhUT.js"
     ]
   },
-  "_cubemapToSphericalPolynomial-DjgCZihC.js": {
-    "file": "assets/cubemapToSphericalPolynomial-DjgCZihC.js",
+  "_constants-DNxlZnxc.js": {
+    "file": "assets/constants-DNxlZnxc.js",
+    "name": "constants"
+  },
+  "_cubemapToSphericalPolynomial-DyZnLLpY.js": {
+    "file": "assets/cubemapToSphericalPolynomial-DyZnLLpY.js",
     "name": "cubemapToSphericalPolynomial",
     "imports": [
       "_math.color.pure-Bz4eYejG.js",
       "_math.scalar.functions-lnL7TJ7T.js",
-      "src/game/engine/createVerseProductionRuntime.ts"
+      "_sphericalPolynomial.pure-D5Qm5Kec.js"
     ]
   },
-  "_dds.pure-4FxmhmkD.js": {
-    "file": "assets/dds.pure-4FxmhmkD.js",
+  "_dds.pure-CsGHXgCU.js": {
+    "file": "assets/dds.pure-CsGHXgCU.js",
     "name": "dds.pure",
     "imports": [
       "_math.scalar.functions-lnL7TJ7T.js",
       "_logger-CuBYPcDK.js",
       "_halfFloat-Ce77JD5z.js",
-      "_cubemapToSphericalPolynomial-DjgCZihC.js"
+      "_cubemapToSphericalPolynomial-DyZnLLpY.js"
     ]
   },
   "_decorators-D8fiUYIF.js": {
@@ -146,11 +161,11 @@
       "_timingTools-BfV6cIZn.js"
     ]
   },
-  "_effectRenderer.pure-CEhPSqPq.js": {
-    "file": "assets/effectRenderer.pure-CEhPSqPq.js",
+  "_effectRenderer.pure-C5aqtpVj.js": {
+    "file": "assets/effectRenderer.pure-C5aqtpVj.js",
     "name": "effectRenderer.pure",
     "imports": [
-      "index.html",
+      "_preload-helper-BRza7kvk.js",
       "_engineStore-BCGLUAAJ.js",
       "_abstractEngine.pure-C3j0tau9.js",
       "_buffer.pure-DH8htWFc.js",
@@ -366,6 +381,13 @@
       "_drawWrapper-BiUi1rdx.js"
     ]
   },
+  "_math.color-BTqTXTiW.js": {
+    "file": "assets/math.color-BTqTXTiW.js",
+    "name": "math.color",
+    "imports": [
+      "_math.color.pure-Bz4eYejG.js"
+    ]
+  },
   "_math.color.pure-Bz4eYejG.js": {
     "file": "assets/math.color.pure-Bz4eYejG.js",
     "name": "math.color.pure",
@@ -422,6 +444,20 @@
     "name": "morphTargetsVertex",
     "imports": [
       "_shaderStore-D-XQlhUT.js"
+    ]
+  },
+  "_objectModelMapping-BDmxCWIZ.js": {
+    "file": "assets/objectModelMapping-BDmxCWIZ.js",
+    "name": "objectModelMapping",
+    "imports": [
+      "_math.color.pure-Bz4eYejG.js",
+      "_typeStore-Cu_sj2zM.js",
+      "_animation.pure-CrKBcOb6.js",
+      "_decorators-D8fiUYIF.js",
+      "_math.size-CZhaENOf.js",
+      "_lightConstants-x6u2d5Tx.js",
+      "_texture.pure-mu0ZuMKy.js",
+      "_constants-DNxlZnxc.js"
     ]
   },
   "_openpbrTransmissionLayerData-DUOGptPd.js": {
@@ -500,6 +536,31 @@
       "_mainUVVaryingDeclaration-BBamQlxR.js"
     ]
   },
+  "_pbrMaterial.pure-B604q9Ok.js": {
+    "file": "assets/pbrMaterial.pure-B604q9Ok.js",
+    "name": "pbrMaterial.pure",
+    "imports": [
+      "_preload-helper-BRza7kvk.js",
+      "_math.color.pure-Bz4eYejG.js",
+      "_typeStore-Cu_sj2zM.js",
+      "_decorators-D8fiUYIF.js",
+      "_timingTools-BfV6cIZn.js",
+      "_math.size-CZhaENOf.js",
+      "_logger-CuBYPcDK.js",
+      "_smartArray-BRfcgNbX.js",
+      "_scene.pure-NS2DTvyA.js",
+      "_shaderStore-D-XQlhUT.js",
+      "_buffer.pure-DH8htWFc.js",
+      "_pushMaterial-63Ap2ur1.js",
+      "_material.pure-4tIEO1FG.js"
+    ],
+    "dynamicImports": [
+      "node_modules/.pnpm/@babylonjs+core@9.22.1/node_modules/@babylonjs/core/ShadersWGSL/pbr.vertex.js",
+      "node_modules/.pnpm/@babylonjs+core@9.22.1/node_modules/@babylonjs/core/ShadersWGSL/pbr.fragment.js",
+      "node_modules/.pnpm/@babylonjs+core@9.22.1/node_modules/@babylonjs/core/Shaders/pbr.vertex.js",
+      "node_modules/.pnpm/@babylonjs+core@9.22.1/node_modules/@babylonjs/core/Shaders/pbr.fragment.js"
+    ]
+  },
   "_pbrUboDeclaration--xFZEw0i.js": {
     "file": "assets/pbrUboDeclaration--xFZEw0i.js",
     "name": "pbrUboDeclaration",
@@ -522,11 +583,11 @@
     "file": "assets/performanceConfigurator-UtxC_Odd.js",
     "name": "performanceConfigurator"
   },
-  "_postProcess.pure-DlkVGLS1.js": {
-    "file": "assets/postProcess.pure-DlkVGLS1.js",
+  "_postProcess.pure-BsiJt7Pb.js": {
+    "file": "assets/postProcess.pure-BsiJt7Pb.js",
     "name": "postProcess.pure",
     "imports": [
-      "index.html",
+      "_preload-helper-BRza7kvk.js",
       "_engineStore-BCGLUAAJ.js",
       "_math.color.pure-Bz4eYejG.js",
       "_typeStore-Cu_sj2zM.js",
@@ -535,22 +596,26 @@
       "_thinEngine.pure-Crqa7rMH.js",
       "_smartArray-BRfcgNbX.js",
       "_abstractEngine.pure-C3j0tau9.js",
-      "_effectRenderer.pure-CEhPSqPq.js"
+      "_effectRenderer.pure-C5aqtpVj.js"
     ],
     "dynamicImports": [
       "node_modules/.pnpm/@babylonjs+core@9.22.1/node_modules/@babylonjs/core/ShadersWGSL/postprocess.vertex.js",
       "node_modules/.pnpm/@babylonjs+core@9.22.1/node_modules/@babylonjs/core/Shaders/postprocess.vertex.js"
     ]
   },
-  "_pushMaterial-BY6XJ9Lq.js": {
-    "file": "assets/pushMaterial-BY6XJ9Lq.js",
+  "_preload-helper-BRza7kvk.js": {
+    "file": "assets/preload-helper-BRza7kvk.js",
+    "name": "preload-helper"
+  },
+  "_pushMaterial-63Ap2ur1.js": {
+    "file": "assets/pushMaterial-63Ap2ur1.js",
     "name": "pushMaterial",
     "imports": [
-      "index.html",
+      "_preload-helper-BRza7kvk.js",
       "_math.color.pure-Bz4eYejG.js",
       "_decorators-D8fiUYIF.js",
       "_texture.pure-mu0ZuMKy.js",
-      "_postProcess.pure-DlkVGLS1.js",
+      "_postProcess.pure-BsiJt7Pb.js",
       "_material.pure-4tIEO1FG.js"
     ],
     "dynamicImports": [
@@ -574,11 +639,11 @@
       "_shaderStore-D-XQlhUT.js"
     ]
   },
-  "_renderTargetTexture.pure-D4X1AYpD.js": {
-    "file": "assets/renderTargetTexture.pure-D4X1AYpD.js",
+  "_renderTargetTexture.pure-CC2NoXxj.js": {
+    "file": "assets/renderTargetTexture.pure-CC2NoXxj.js",
     "name": "renderTargetTexture.pure",
     "imports": [
-      "index.html",
+      "_preload-helper-BRza7kvk.js",
       "_engineStore-BCGLUAAJ.js",
       "_math.color.pure-Bz4eYejG.js",
       "_timingTools-BfV6cIZn.js",
@@ -670,6 +735,13 @@
     "file": "assets/smartArray-BRfcgNbX.js",
     "name": "smartArray"
   },
+  "_sphericalPolynomial.pure-D5Qm5Kec.js": {
+    "file": "assets/sphericalPolynomial.pure-D5Qm5Kec.js",
+    "name": "sphericalPolynomial.pure",
+    "imports": [
+      "_math.color.pure-Bz4eYejG.js"
+    ]
+  },
   "_texture.pure-mu0ZuMKy.js": {
     "file": "assets/texture.pure-mu0ZuMKy.js",
     "name": "texture.pure",
@@ -684,6 +756,24 @@
       "_tools.pure-DFrfwvhs.js",
       "_math.plane-BhfnE0Ft.js",
       "_baseTexture.pure-DXsOm10e.js"
+    ]
+  },
+  "_textureLoaderManager-QWlk6MSa.js": {
+    "file": "assets/textureLoaderManager-QWlk6MSa.js",
+    "name": "textureLoaderManager",
+    "imports": [
+      "_preload-helper-BRza7kvk.js",
+      "_logger-CuBYPcDK.js"
+    ],
+    "dynamicImports": [
+      "node_modules/.pnpm/@babylonjs+core@9.22.1/node_modules/@babylonjs/core/Materials/Textures/Loaders/iesTextureLoader.js",
+      "node_modules/.pnpm/@babylonjs+core@9.22.1/node_modules/@babylonjs/core/Materials/Textures/Loaders/ddsTextureLoader.js",
+      "node_modules/.pnpm/@babylonjs+core@9.22.1/node_modules/@babylonjs/core/Materials/Textures/Loaders/basisTextureLoader.js",
+      "node_modules/.pnpm/@babylonjs+core@9.22.1/node_modules/@babylonjs/core/Materials/Textures/Loaders/envTextureLoader.js",
+      "node_modules/.pnpm/@babylonjs+core@9.22.1/node_modules/@babylonjs/core/Materials/Textures/Loaders/hdrTextureLoader.js",
+      "node_modules/.pnpm/@babylonjs+core@9.22.1/node_modules/@babylonjs/core/Materials/Textures/Loaders/ktxTextureLoader.js",
+      "node_modules/.pnpm/@babylonjs+core@9.22.1/node_modules/@babylonjs/core/Materials/Textures/Loaders/tgaTextureLoader.js",
+      "node_modules/.pnpm/@babylonjs+core@9.22.1/node_modules/@babylonjs/core/Materials/Textures/Loaders/exrTextureLoader.js"
     ]
   },
   "_thinEngine.pure-Crqa7rMH.js": {
@@ -731,19 +821,23 @@
     ]
   },
   "index.html": {
-    "file": "assets/index-zOwfl4SY.js",
+    "file": "assets/index-DMBt3jI8.js",
     "name": "index",
     "src": "index.html",
     "isEntry": true,
+    "imports": [
+      "_preload-helper-BRza7kvk.js"
+    ],
     "dynamicImports": [
-      "src/game/engine/createVerseProductionRuntime.ts"
+      "src/game/engine/createVerseProductionRuntime.ts",
+      "src/infrastructure/supabase/demo-release.ts"
     ],
     "css": [
-      "assets/index-CqhCM-eM.css"
+      "assets/index-CLwD_F60.css"
     ]
   },
   "node_modules/.pnpm/@babylonjs+core@9.22.1/node_modules/@babylonjs/core/Animations/animationGroup.js": {
-    "file": "assets/animationGroup-C3Rs6qEx.js",
+    "file": "assets/animationGroup-BP5rCtyh.js",
     "name": "animationGroup",
     "src": "node_modules/.pnpm/@babylonjs+core@9.22.1/node_modules/@babylonjs/core/Animations/animationGroup.js",
     "isDynamicEntry": true,
@@ -751,8 +845,8 @@
       "_engineStore-BCGLUAAJ.js",
       "_animation.pure-CrKBcOb6.js",
       "_math.size-CZhaENOf.js",
-      "_scene.pure-NS2DTvyA.js",
-      "src/game/engine/createVerseProductionRuntime.ts"
+      "_animatable.pure-D3Pzdk9N.js",
+      "_scene.pure-NS2DTvyA.js"
     ]
   },
   "node_modules/.pnpm/@babylonjs+core@9.22.1/node_modules/@babylonjs/core/Engines/thinEngine.js": {
@@ -765,12 +859,12 @@
     ]
   },
   "node_modules/.pnpm/@babylonjs+core@9.22.1/node_modules/@babylonjs/core/Materials/PBR/openpbrMaterial.pure.js": {
-    "file": "assets/openpbrMaterial.pure-B-vbBOdy.js",
+    "file": "assets/openpbrMaterial.pure-9Ymi_567.js",
     "name": "openpbrMaterial.pure",
     "src": "node_modules/.pnpm/@babylonjs+core@9.22.1/node_modules/@babylonjs/core/Materials/PBR/openpbrMaterial.pure.js",
     "isDynamicEntry": true,
     "imports": [
-      "index.html",
+      "_preload-helper-BRza7kvk.js",
       "_math.color.pure-Bz4eYejG.js",
       "_typeStore-Cu_sj2zM.js",
       "_decorators-D8fiUYIF.js",
@@ -785,8 +879,8 @@
       "_buffer.pure-DH8htWFc.js",
       "_sceneComponent-B93VoAZx.js",
       "_texture.pure-mu0ZuMKy.js",
-      "_renderTargetTexture.pure-D4X1AYpD.js",
-      "_pushMaterial-BY6XJ9Lq.js",
+      "_renderTargetTexture.pure-CC2NoXxj.js",
+      "_pushMaterial-63Ap2ur1.js",
       "_material.pure-4tIEO1FG.js"
     ],
     "dynamicImports": [
@@ -801,12 +895,12 @@
     ]
   },
   "node_modules/.pnpm/@babylonjs+core@9.22.1/node_modules/@babylonjs/core/Materials/PBR/pbrMaterial.pure.js": {
-    "file": "assets/pbrMaterial.pure-DSTrn68u.js",
+    "file": "assets/pbrMaterial.pure-3L0BVJDj.js",
     "name": "pbrMaterial.pure",
     "src": "node_modules/.pnpm/@babylonjs+core@9.22.1/node_modules/@babylonjs/core/Materials/PBR/pbrMaterial.pure.js",
     "isDynamicEntry": true,
     "imports": [
-      "src/game/engine/createVerseProductionRuntime.ts"
+      "_pbrMaterial.pure-B604q9Ok.js"
     ]
   },
   "node_modules/.pnpm/@babylonjs+core@9.22.1/node_modules/@babylonjs/core/Materials/Textures/Loaders/basisTextureLoader.js": {
@@ -822,22 +916,22 @@
     ]
   },
   "node_modules/.pnpm/@babylonjs+core@9.22.1/node_modules/@babylonjs/core/Materials/Textures/Loaders/ddsTextureLoader.js": {
-    "file": "assets/ddsTextureLoader-CbtZvCDA.js",
+    "file": "assets/ddsTextureLoader-DWLYunjZ.js",
     "name": "ddsTextureLoader",
     "src": "node_modules/.pnpm/@babylonjs+core@9.22.1/node_modules/@babylonjs/core/Materials/Textures/Loaders/ddsTextureLoader.js",
     "isDynamicEntry": true,
     "imports": [
-      "_dds.pure-4FxmhmkD.js",
-      "src/game/engine/createVerseProductionRuntime.ts"
+      "_sphericalPolynomial.pure-D5Qm5Kec.js",
+      "_dds.pure-CsGHXgCU.js"
     ]
   },
   "node_modules/.pnpm/@babylonjs+core@9.22.1/node_modules/@babylonjs/core/Materials/Textures/Loaders/envTextureLoader.js": {
-    "file": "assets/envTextureLoader-D1z0QcS7.js",
+    "file": "assets/envTextureLoader-DFwwFzro.js",
     "name": "envTextureLoader",
     "src": "node_modules/.pnpm/@babylonjs+core@9.22.1/node_modules/@babylonjs/core/Materials/Textures/Loaders/envTextureLoader.js",
     "isDynamicEntry": true,
     "imports": [
-      "index.html",
+      "_preload-helper-BRza7kvk.js",
       "_math.color.pure-Bz4eYejG.js",
       "_math.scalar.functions-lnL7TJ7T.js",
       "_logger-CuBYPcDK.js",
@@ -845,9 +939,9 @@
       "_thinEngine.pure-Crqa7rMH.js",
       "_internalTexture-Dbf8pg9P.js",
       "_baseTexture.pure-DXsOm10e.js",
-      "_postProcess.pure-DlkVGLS1.js",
-      "_cubemapToSphericalPolynomial-DjgCZihC.js",
-      "src/game/engine/createVerseProductionRuntime.ts"
+      "_postProcess.pure-BsiJt7Pb.js",
+      "_sphericalPolynomial.pure-D5Qm5Kec.js",
+      "_cubemapToSphericalPolynomial-DyZnLLpY.js"
     ],
     "dynamicImports": [
       "node_modules/.pnpm/@babylonjs+core@9.22.1/node_modules/@babylonjs/core/ShadersWGSL/rgbdDecode.fragment.js",
@@ -907,7 +1001,7 @@
     "isDynamicEntry": true
   },
   "node_modules/.pnpm/@babylonjs+core@9.22.1/node_modules/@babylonjs/core/Misc/dds.js": {
-    "file": "assets/dds-0x09ieGd.js",
+    "file": "assets/dds-B2cQoXAB.js",
     "name": "dds",
     "src": "node_modules/.pnpm/@babylonjs+core@9.22.1/node_modules/@babylonjs/core/Misc/dds.js",
     "isDynamicEntry": true,
@@ -917,24 +1011,24 @@
       "_guid-gRBbzhpv.js",
       "_abstractEngine.pure-C3j0tau9.js",
       "_internalTexture-Dbf8pg9P.js",
-      "_dds.pure-4FxmhmkD.js",
-      "src/game/engine/createVerseProductionRuntime.ts"
+      "_dds.pure-CsGHXgCU.js",
+      "_textureLoaderManager-QWlk6MSa.js"
     ]
   },
   "node_modules/.pnpm/@babylonjs+core@9.22.1/node_modules/@babylonjs/core/Misc/dumpTools.js": {
-    "file": "assets/dumpTools-CAIq0F6r.js",
+    "file": "assets/dumpTools-DBOCS5--.js",
     "name": "dumpTools",
     "src": "node_modules/.pnpm/@babylonjs+core@9.22.1/node_modules/@babylonjs/core/Misc/dumpTools.js",
     "isDynamicEntry": true,
     "imports": [
-      "index.html",
+      "_preload-helper-BRza7kvk.js",
       "_engineStore-BCGLUAAJ.js",
       "_math.scalar.functions-lnL7TJ7T.js",
       "_decorators-D8fiUYIF.js",
       "_fileTools.pure-Di-9lOro.js",
       "_logger-CuBYPcDK.js",
       "_tools.pure-DFrfwvhs.js",
-      "_effectRenderer.pure-CEhPSqPq.js"
+      "_effectRenderer.pure-C5aqtpVj.js"
     ],
     "dynamicImports": [
       "node_modules/.pnpm/@babylonjs+core@9.22.1/node_modules/@babylonjs/core/Engines/thinEngine.js",
@@ -1539,23 +1633,23 @@
     ]
   },
   "node_modules/.pnpm/@babylonjs+loaders@9.22.1_@babylonjs+core@9.22.1_babylonjs-gltf2interface@9.22.1/node_modules/@babylonjs/loaders/glTF/2.0/glTFLoaderAnimation.js": {
-    "file": "assets/glTFLoaderAnimation-DJ30Eunq.js",
+    "file": "assets/glTFLoaderAnimation-BAL-xW25.js",
     "name": "glTFLoaderAnimation",
     "src": "node_modules/.pnpm/@babylonjs+loaders@9.22.1_@babylonjs+core@9.22.1_babylonjs-gltf2interface@9.22.1/node_modules/@babylonjs/loaders/glTF/2.0/glTFLoaderAnimation.js",
     "isDynamicEntry": true,
     "imports": [
       "_math.color.pure-Bz4eYejG.js",
       "_animation.pure-CrKBcOb6.js",
-      "src/game/engine/createVerseProductionRuntime.ts"
+      "_objectModelMapping-BDmxCWIZ.js"
     ]
   },
   "node_modules/.pnpm/@babylonjs+loaders@9.22.1_@babylonjs+core@9.22.1_babylonjs-gltf2interface@9.22.1/node_modules/@babylonjs/loaders/glTF/2.0/openpbrMaterialLoadingAdapter.js": {
-    "file": "assets/openpbrMaterialLoadingAdapter-RgIXsnZQ.js",
+    "file": "assets/openpbrMaterialLoadingAdapter-Vh-WHb2P.js",
     "name": "openpbrMaterialLoadingAdapter",
     "src": "node_modules/.pnpm/@babylonjs+loaders@9.22.1_@babylonjs+core@9.22.1_babylonjs-gltf2interface@9.22.1/node_modules/@babylonjs/loaders/glTF/2.0/openpbrMaterialLoadingAdapter.js",
     "isDynamicEntry": true,
     "imports": [
-      "index.html",
+      "_preload-helper-BRza7kvk.js",
       "_engineStore-BCGLUAAJ.js",
       "_math.color.pure-Bz4eYejG.js",
       "_decorators-D8fiUYIF.js",
@@ -1564,9 +1658,9 @@
       "_sceneComponent-B93VoAZx.js",
       "_texture.pure-mu0ZuMKy.js",
       "_drawWrapper-BiUi1rdx.js",
-      "_renderTargetTexture.pure-D4X1AYpD.js",
+      "_renderTargetTexture.pure-CC2NoXxj.js",
       "_material.pure-4tIEO1FG.js",
-      "src/game/engine/createVerseProductionRuntime.ts"
+      "_math.color-BTqTXTiW.js"
     ],
     "dynamicImports": [
       "node_modules/.pnpm/@babylonjs+core@9.22.1/node_modules/@babylonjs/core/ShadersWGSL/procedural.vertex.js",
@@ -1576,22 +1670,22 @@
     ]
   },
   "node_modules/.pnpm/@babylonjs+loaders@9.22.1_@babylonjs+core@9.22.1_babylonjs-gltf2interface@9.22.1/node_modules/@babylonjs/loaders/glTF/2.0/pbrMaterialLoadingAdapter.js": {
-    "file": "assets/pbrMaterialLoadingAdapter-C35VKwZ3.js",
+    "file": "assets/pbrMaterialLoadingAdapter-C6i58NMb.js",
     "name": "pbrMaterialLoadingAdapter",
     "src": "node_modules/.pnpm/@babylonjs+loaders@9.22.1_@babylonjs+core@9.22.1_babylonjs-gltf2interface@9.22.1/node_modules/@babylonjs/loaders/glTF/2.0/pbrMaterialLoadingAdapter.js",
     "isDynamicEntry": true,
     "imports": [
       "_math.color.pure-Bz4eYejG.js",
-      "src/game/engine/createVerseProductionRuntime.ts"
+      "_constants-DNxlZnxc.js"
     ]
   },
   "src/game/engine/createVerseProductionRuntime.ts": {
-    "file": "assets/createVerseProductionRuntime-CoKEK8m-.js",
+    "file": "assets/createVerseProductionRuntime-DJiXLmxH.js",
     "name": "createVerseProductionRuntime",
     "src": "src/game/engine/createVerseProductionRuntime.ts",
     "isDynamicEntry": true,
     "imports": [
-      "index.html",
+      "_preload-helper-BRza7kvk.js",
       "_engineStore-BCGLUAAJ.js",
       "_math.color.pure-Bz4eYejG.js",
       "_math.scalar.functions-lnL7TJ7T.js",
@@ -1601,6 +1695,7 @@
       "_timingTools-BfV6cIZn.js",
       "_math.size-CZhaENOf.js",
       "_fileTools.pure-Di-9lOro.js",
+      "_animatable.pure-D3Pzdk9N.js",
       "_logger-CuBYPcDK.js",
       "_tools.pure-DFrfwvhs.js",
       "_halfFloat-Ce77JD5z.js",
@@ -1609,34 +1704,26 @@
       "_smartArray-BRfcgNbX.js",
       "_scene.pure-NS2DTvyA.js",
       "_lightConstants-x6u2d5Tx.js",
-      "_shaderStore-D-XQlhUT.js",
       "_abstractEngine.pure-C3j0tau9.js",
       "_internalTexture-Dbf8pg9P.js",
       "_buffer.pure-DH8htWFc.js",
       "_sceneComponent-B93VoAZx.js",
       "_baseTexture.pure-DXsOm10e.js",
       "_texture.pure-mu0ZuMKy.js",
-      "_effectRenderer.pure-CEhPSqPq.js",
+      "_effectRenderer.pure-C5aqtpVj.js",
       "_drawWrapper-BiUi1rdx.js",
-      "_postProcess.pure-DlkVGLS1.js",
-      "_renderTargetTexture.pure-D4X1AYpD.js",
-      "_pushMaterial-BY6XJ9Lq.js",
-      "_material.pure-4tIEO1FG.js"
+      "_postProcess.pure-BsiJt7Pb.js",
+      "_renderTargetTexture.pure-CC2NoXxj.js",
+      "_pushMaterial-63Ap2ur1.js",
+      "_material.pure-4tIEO1FG.js",
+      "_objectModelMapping-BDmxCWIZ.js",
+      "_pbrMaterial.pure-B604q9Ok.js",
+      "_sphericalPolynomial.pure-D5Qm5Kec.js",
+      "_textureLoaderManager-QWlk6MSa.js",
+      "_math.color-BTqTXTiW.js"
     ],
     "dynamicImports": [
       "node_modules/.pnpm/@babylonjs+core@9.22.1/node_modules/@babylonjs/core/Meshes/mesh.vertexData.functions.js",
-      "node_modules/.pnpm/@babylonjs+core@9.22.1/node_modules/@babylonjs/core/ShadersWGSL/pbr.vertex.js",
-      "node_modules/.pnpm/@babylonjs+core@9.22.1/node_modules/@babylonjs/core/ShadersWGSL/pbr.fragment.js",
-      "node_modules/.pnpm/@babylonjs+core@9.22.1/node_modules/@babylonjs/core/Shaders/pbr.vertex.js",
-      "node_modules/.pnpm/@babylonjs+core@9.22.1/node_modules/@babylonjs/core/Shaders/pbr.fragment.js",
-      "node_modules/.pnpm/@babylonjs+core@9.22.1/node_modules/@babylonjs/core/Materials/Textures/Loaders/iesTextureLoader.js",
-      "node_modules/.pnpm/@babylonjs+core@9.22.1/node_modules/@babylonjs/core/Materials/Textures/Loaders/ddsTextureLoader.js",
-      "node_modules/.pnpm/@babylonjs+core@9.22.1/node_modules/@babylonjs/core/Materials/Textures/Loaders/basisTextureLoader.js",
-      "node_modules/.pnpm/@babylonjs+core@9.22.1/node_modules/@babylonjs/core/Materials/Textures/Loaders/envTextureLoader.js",
-      "node_modules/.pnpm/@babylonjs+core@9.22.1/node_modules/@babylonjs/core/Materials/Textures/Loaders/hdrTextureLoader.js",
-      "node_modules/.pnpm/@babylonjs+core@9.22.1/node_modules/@babylonjs/core/Materials/Textures/Loaders/ktxTextureLoader.js",
-      "node_modules/.pnpm/@babylonjs+core@9.22.1/node_modules/@babylonjs/core/Materials/Textures/Loaders/tgaTextureLoader.js",
-      "node_modules/.pnpm/@babylonjs+core@9.22.1/node_modules/@babylonjs/core/Materials/Textures/Loaders/exrTextureLoader.js",
       "node_modules/.pnpm/@babylonjs+core@9.22.1/node_modules/@babylonjs/core/Animations/animationGroup.js",
       "node_modules/.pnpm/@babylonjs+loaders@9.22.1_@babylonjs+core@9.22.1_babylonjs-gltf2interface@9.22.1/node_modules/@babylonjs/loaders/glTF/2.0/glTFLoaderAnimation.js",
       "node_modules/.pnpm/@babylonjs+core@9.22.1/node_modules/@babylonjs/core/Materials/PBR/openpbrMaterial.pure.js",
@@ -1665,5 +1752,11 @@
       "node_modules/.pnpm/@babylonjs+core@9.22.1/node_modules/@babylonjs/core/Shaders/depthBoxBlur.fragment.js",
       "node_modules/.pnpm/@babylonjs+core@9.22.1/node_modules/@babylonjs/core/Shaders/ShadersInclude/shadowMapFragmentSoftTransparentShadow.js"
     ]
+  },
+  "src/infrastructure/supabase/demo-release.ts": {
+    "file": "assets/demo-release-De__7lvb.js",
+    "name": "demo-release",
+    "src": "src/infrastructure/supabase/demo-release.ts",
+    "isDynamicEntry": true
   }
 }
