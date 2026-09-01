@@ -3,16 +3,31 @@
   "short_name": "Verse",
   "description": "Piccoli passi quotidiani per capire la tua alimentazione.",
   "lang": "it-IT",
-  "start_url": "./?demo=1#/",
+  "id": "./?demo=fitactive",
+  "start_url": "./?demo=fitactive#/",
+  "scope": "./",
   "display": "standalone",
+  "orientation": "portrait-primary",
   "background_color": "#fffaf5",
   "theme_color": "#ff6b00",
   "icons": [
     {
+      "src": "icons/verse-icon-192.png",
+      "sizes": "192x192",
+      "type": "image/png",
+      "purpose": "any"
+    },
+    {
+      "src": "icons/verse-icon-512.png",
+      "sizes": "512x512",
+      "type": "image/png",
+      "purpose": "any maskable"
+    },
+    {
       "src": "icons/verse-mark.svg",
       "sizes": "any",
       "type": "image/svg+xml",
-      "purpose": "any maskable"
+      "purpose": "any"
     }
   ]
 }
