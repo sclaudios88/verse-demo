@@ -1,0 +1,1 @@
+import{c as e,o as t,s as n}from"./createVerseProductionRuntime-BirTS_pB.js";export{t as PBRMaterial,n as RegisterPBRMaterial,e as RegisterPbrMaterial};
