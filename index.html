@@ -8,7 +8,23 @@
     <meta name="apple-mobile-web-app-capable" content="yes" />
     <meta name="apple-mobile-web-app-status-bar-style" content="default" />
     <meta name="apple-mobile-web-app-title" content="Verse" />
-    <link rel="manifest" href="/verse-demo/manifest.webmanifest" />
+    <script>
+      (() => {
+        const parameters = new URLSearchParams(window.location.search);
+        const personal = parameters.get("demo") === "tracker";
+        const manifest = document.createElement("link");
+        manifest.rel = "manifest";
+        manifest.href = personal ? "./manifest-personal.webmanifest" : "./manifest-fitactive.webmanifest";
+        document.head.append(manifest);
+        if (personal) {
+          document.querySelector('meta[name="apple-mobile-web-app-title"]')?.setAttribute("content", "Verse Mio");
+          document.title = "Verse Mio";
+        } else if (parameters.get("demo") === "fitactive") {
+          document.querySelector('meta[name="apple-mobile-web-app-title"]')?.setAttribute("content", "Verse Demo");
+          document.title = "Verse Demo FitActive";
+        }
+      })();
+    </script>
     <link rel="icon" href="/verse-demo/icons/verse-mark.svg" />
     <link rel="apple-touch-icon" href="/verse-demo/icons/verse-icon-192.png" />
     <title>Verse</title>
