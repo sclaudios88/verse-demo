@@ -1,1 +1,0 @@
-import{c as e,o as t,s as n}from"./createVerseProductionRuntime-C-GL07E6.js";export{t as PBRMaterial,n as RegisterPBRMaterial,e as RegisterPbrMaterial};
