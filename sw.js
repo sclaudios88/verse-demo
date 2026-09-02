@@ -1,5 +1,5 @@
-const CACHE_NAME = "verse-shell-y3mcxb";
-const APP_SHELL = ["/verse-demo/","/verse-demo/manifest.webmanifest","/verse-demo/manifest-fitactive.webmanifest","/verse-demo/manifest-personal.webmanifest","/verse-demo/icons/verse-mark.svg","/verse-demo/icons/verse-icon-192.png","/verse-demo/icons/verse-icon-512.png","/verse-demo/assets/index-CLwD_F60.css","/verse-demo/assets/index-DMBt3jI8.js","/verse-demo/assets/preload-helper-BRza7kvk.js"];
+const CACHE_NAME = "verse-shell-1jtykuc";
+const APP_SHELL = ["/verse-demo/","/verse-demo/manifest.webmanifest","/verse-demo/manifest-fitactive.webmanifest","/verse-demo/manifest-personal.webmanifest","/verse-demo/icons/verse-mark.svg","/verse-demo/icons/verse-icon-192.png","/verse-demo/icons/verse-icon-512.png","/verse-demo/assets/index-CWE_2qrK.js","/verse-demo/assets/index-D1YEex-2.css","/verse-demo/assets/preload-helper-BRza7kvk.js"];
 const SHELL_ROOT = "/verse-demo/";
 const SAFE_RUNTIME_PREFIXES = ["assets/", "icons/", "game/"].map((path) => SHELL_ROOT + path);
 const PRIVATE_PATH_SEGMENTS = ["/api", "/auth", "/private", "/rest", "/rpc", "/functions", "/storage"];

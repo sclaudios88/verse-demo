@@ -821,7 +821,7 @@
     ]
   },
   "index.html": {
-    "file": "assets/index-DMBt3jI8.js",
+    "file": "assets/index-CWE_2qrK.js",
     "name": "index",
     "src": "index.html",
     "isEntry": true,
@@ -833,7 +833,7 @@
       "src/infrastructure/supabase/demo-release.ts"
     ],
     "css": [
-      "assets/index-CLwD_F60.css"
+      "assets/index-D1YEex-2.css"
     ]
   },
   "node_modules/.pnpm/@babylonjs+core@9.22.1/node_modules/@babylonjs/core/Animations/animationGroup.js": {

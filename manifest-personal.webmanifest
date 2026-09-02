@@ -4,7 +4,7 @@
   "description": "La tua vista personale di Verse con diario, progressi e statistiche.",
   "lang": "it-IT",
   "id": "./?demo=tracker",
-  "start_url": "./?demo=tracker&v=20260901b#/",
+  "start_url": "./?demo=tracker&v=20260902c#/",
   "scope": "./",
   "display": "standalone",
   "orientation": "portrait-primary",
